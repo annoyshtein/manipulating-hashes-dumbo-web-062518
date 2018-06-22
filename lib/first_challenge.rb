@@ -14,8 +14,9 @@ def first_challenge
   }
 
   contacts["Freddy Mercury"].collect do |attribute, value|
-    puts attribute
-    puts value
+    if attribute == :favorite_icecream_flavors
+      value.delete("strawberry")
+    end
   end
 
 
@@ -23,4 +24,4 @@ def first_challenge
   contacts
 end
 
-first_challenge
+# first_challenge
